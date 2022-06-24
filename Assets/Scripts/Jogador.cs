@@ -11,18 +11,38 @@ public class Jogador : MonoBehaviour
         public LayerMask layerChao;
         public float distanciaMinimaChao = 1;
         public AudioSource jumpSFX;
+        public AudioSource cemPontosSFX;
+        public AudioSource FimDeJogoSFX;
         private bool estaNoChao;
         private float pontos;
+        private float highscore;
         public float multiplicadorPontos = 1;
         public Text pontosText;
+        public Text PontosHighscoreText;
         public Animator animatorComponent;
+
+
+        private void Start()
+        {
+            highscore = PlayerPrefs.GetFloat("HIGHSCORE");
+            // sistema de guardar uma informação, mesmo após o fechamento da aplicação.
+            PontosHighscoreText.text = "Recorde: " + Mathf.FloorToInt(highscore).ToString();
+        }
 
     // Update is called once per frame
     void Update()
     {
         pontos += Time.deltaTime * multiplicadorPontos;
 
-        pontosText.text = "Pontuação: " + Mathf.FloorToInt(pontos).ToString();
+        var pontosArredondado = Mathf.FloorToInt(pontos);
+        pontosText.text = "Pontuação: " + pontosArredondado.ToString();
+
+        if (pontosArredondado > 0 &&
+            pontosArredondado % 100 == 0
+                && !cemPontosSFX.isPlaying)
+        {
+            cemPontosSFX.Play();
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -63,6 +83,8 @@ public class Jogador : MonoBehaviour
     }
 
 
+
+
     private void FixedUpdate()
     {
         estaNoChao = Physics2D.Raycast(transform.position, Vector2.down, distanciaMinimaChao, layerChao);
@@ -73,7 +95,18 @@ public class Jogador : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Inimigo"))
         {
+            if (pontos  > highscore)
+            {
+                highscore = pontos;
+
+                PlayerPrefs.SetFloat("HIGHSCORE", highscore);
+            }
+        // condição de highscore
+
+            FimDeJogoSFX.Play();
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //variavel de gameover
         }
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 82caed3c2bc6b8e4e9068fb68041426a
+guid: 74ab64879cf144d4a852520ecf18751c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -128,55 +128,118 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CactosFinos_0
+      name: pngwing.com_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 34
-        height: 35
+        x: 103
+        y: 624
+        width: 14
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfaf25aa14f4a4c49a2870aed836aed2
-      internalID: -1764325552
+      spriteID: 9519983c0df2107469315fbe3cf75581
+      internalID: 1080122968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CactosFinos_1
+      name: pngwing.com_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 0
-        width: 34
-        height: 35
+        x: 10
+        y: 252
+        width: 62
+        height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890a2f29b0527104f8442c17a9b0991e
-      internalID: -2086272094
+      spriteID: 581c8072598931d4a864aa3f67482fd1
+      internalID: -417625728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CactosFinos_2
+      name: pngwing.com_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 0
-        width: 34
-        height: 35
+        x: 7
+        y: 835
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7bf977a079cd940a31deb73d15813f
+      internalID: -1129943619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 610
+        width: 61
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e7ec05dca965a45bb89ca3ac9cde04
+      internalID: -1463146226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com_4
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 253
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13547d6f2d1c8064696ea72d4f024792
+      internalID: 851591301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngwing.com_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 13
+        width: 61
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 494e8a772fdbafd46b886517a1f5826d
-      internalID: 1773893298
+      spriteID: 096db20781b9e4e49bee8d6dfeba14a5
+      internalID: -688383310
       vertices: []
       indices: 
       edges: []
@@ -201,9 +264,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CactosFinos_2: 1773893298
-      CactosFinos_1: -2086272094
-      CactosFinos_0: -1764325552
+      pngwing.com_2: -1129943619
+      pngwing.com_4: 851591301
+      pngwing.com_0: 1080122968
+      pngwing.com_1: -417625728
+      pngwing.com_3: -1463146226
+      pngwing.com_5: -688383310
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

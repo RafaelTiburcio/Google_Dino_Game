@@ -657,6 +657,7 @@ GameObject:
   - component: {fileID: 1244658410}
   - component: {fileID: 1244658411}
   - component: {fileID: 1244658412}
+  - component: {fileID: 1244658413}
   m_Layer: 0
   m_Name: Dinossauro
   m_TagString: Untagged
@@ -819,8 +820,29 @@ MonoBehaviour:
     m_Bits: 256
   distanciaMinimaChao: 0.75
   jumpSFX: {fileID: 854210128}
-  multiplicadorPontos: 4.5
+  multiplicadorPontos: 3
   pontosText: {fileID: 1261118406}
+  animatorComponent: {fileID: 1244658413}
+--- !u!95 &1244658413
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244658407}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8becdff9e72bddf4a8110919eb5f13d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1261118404
 GameObject:
   m_ObjectHideFlags: 0

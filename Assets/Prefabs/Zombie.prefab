@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6858398456173159633}
   m_Layer: 0
   m_Name: Zombie
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direcao: {x: -1, y: 0}
-  velocidade: 2
+  velocidade: 4.5
 --- !u!60 &6858398456173159633
 PolygonCollider2D:
   m_ObjectHideFlags: 0

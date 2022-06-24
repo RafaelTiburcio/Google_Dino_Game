@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour
 {
@@ -8,20 +10,25 @@ public class Jogador : MonoBehaviour
         public float forcaPulo;
         public LayerMask layerChao;
         public float distanciaMinimaChao = 1;
+        public AudioSource jumpSFX;
         private bool estaNoChao;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+        private float pontos;
+        public float multiplicadorPontos = 1;
+        public Text pontosText;
 
     // Update is called once per frame
     void Update()
     {
+        pontos += Time.deltaTime * multiplicadorPontos;
+
+        pontosText.text = "Pontuação: " + Mathf.FloorToInt(pontos).ToString();
+
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
              Pular();
+
+            jumpSFX.Play();
+
         }
     }
 
@@ -37,7 +44,13 @@ public class Jogador : MonoBehaviour
     {
         estaNoChao = Physics2D.Raycast(transform.position, Vector2.down, distanciaMinimaChao, layerChao);
 
-
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Inimigo"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
 }

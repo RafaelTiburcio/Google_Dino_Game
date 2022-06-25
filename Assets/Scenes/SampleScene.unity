@@ -152,9 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b787e8c6682fbfe44919ec5478e87cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modificadorVelocidade: 0.2
+  modificadorVelocidade: 0.1
   velocidade: 4.5
-  velocidadeMaxima: 75
+  velocidadeMaxima: 8
 --- !u!4 &59771219
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -400, y: -35}
+  m_AnchoredPosition: {x: -800, y: -70}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438471509
@@ -459,12 +459,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a62c3bde33aa7ee4f93f28bb7f4edb77, type: 3}
-    m_FontSize: 55
+    m_Font: {fileID: 12800000, guid: 24bf2e415c90d3e46990a9fcf5ac8e04, type: 3}
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 25
-    m_MaxSize: 55
+    m_MinSize: 1
+    m_MaxSize: 150
     m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -543,7 +543,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
@@ -1089,8 +1089,10 @@ MonoBehaviour:
   - {fileID: 64059329251790375, guid: 2d032d15665425e4ba40332042b7ed7e, type: 3}
   - {fileID: 5230168701918992522, guid: 2184a8addaa090f4ca783ec783176525, type: 3}
   - {fileID: 385719626667727689, guid: 84a9c813bbfe11946a935a8af8fdd476, type: 3}
+  - {fileID: 7242663410825054125, guid: 5b1a84329c12cfd46b06bfe65a060784, type: 3}
+  - {fileID: 3350673536608434073, guid: f17f21325addd2144a8cbe65626e62d9, type: 3}
   delayInicial: 0
-  delayEntreNuvens: 5
+  delayEntreNuvens: 2.5
 --- !u!1 &966746386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,10 +1334,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.2
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 6
+  m_GravityScale: 6.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1423,7 +1425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -35}
+  m_AnchoredPosition: {x: 800, y: -70}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261118406
@@ -1447,12 +1449,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a62c3bde33aa7ee4f93f28bb7f4edb77, type: 3}
-    m_FontSize: 55
+    m_Font: {fileID: 12800000, guid: 24bf2e415c90d3e46990a9fcf5ac8e04, type: 3}
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 25
-    m_MaxSize: 55
+    m_MinSize: 0
+    m_MaxSize: 150
     m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1514,7 +1516,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5869}
+  m_Offset: {x: 0, y: -0.65046895}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1525,7 +1527,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.05, y: 5.953885}
+  m_Size: {x: 5.05, y: 5.826748}
   m_EdgeRadius: 0
 --- !u!212 &1349959553
 SpriteRenderer:
@@ -1587,8 +1589,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349959550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.084, y: -2.242, z: 0}
-  m_LocalScale: {x: 4.8497224, y: 0.33585307, z: 1}
+  m_LocalPosition: {x: 24.084, y: -2.2, z: 0}
+  m_LocalScale: {x: 4.8497224, y: 0.3095, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1839,12 +1841,13 @@ MonoBehaviour:
   groundEnemiesPrefabs:
   - {fileID: 731546718031787899, guid: 1dc0ec88e5aa0714fa1031d179bb395a, type: 3}
   - {fileID: 6035691657616834474, guid: c7bbbbdf7006ff14da0135474c5c4955, type: 3}
+  - {fileID: 5692001546606895067, guid: 035479115dd6f3246a8e6e55bb51b79e, type: 3}
   birdPreFab: {fileID: 3350673536608434073, guid: f17f21325addd2144a8cbe65626e62d9, type: 3}
-  birdYMinimo: 0.5
-  birdYMaximo: 2
-  delayInicial: 1.5
+  birdYMinimo: 1
+  birdYMaximo: 1.2
+  delayInicial: 2.5
   delayEntreEnemies: 1.5
-  distanciaMinima: 4
+  distanciaMinima: 4.5
   distanciaMaxima: 12
   birdSpawnPontuacaoMinima: 50
   jogadorScript: {fileID: 1244658412}

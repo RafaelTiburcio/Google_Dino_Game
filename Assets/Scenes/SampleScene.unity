@@ -1090,7 +1090,7 @@ MonoBehaviour:
   - {fileID: 5230168701918992522, guid: 2184a8addaa090f4ca783ec783176525, type: 3}
   - {fileID: 385719626667727689, guid: 84a9c813bbfe11946a935a8af8fdd476, type: 3}
   delayInicial: 0
-  delayEntreNuvens: 20
+  delayEntreNuvens: 5
 --- !u!1 &966746386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1335,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1354,7 +1354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1244658410}
-  forcaPulo: 800
+  forcaPulo: 850
   layerChao:
     serializedVersion: 2
     m_Bits: 256
@@ -1843,7 +1843,9 @@ MonoBehaviour:
   birdYMaximo: 2
   delayInicial: 1
   delayEntreEnemies: 1.5
-  birdSpawnPontuacaoMinima: 300
+  distanciaMinima: 3
+  distanciaMaxima: 15
+  birdSpawnPontuacaoMinima: 150
   jogadorScript: {fileID: 1244658412}
 --- !u!4 &1838199762
 Transform:

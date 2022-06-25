@@ -20,6 +20,7 @@ public class Jogador : MonoBehaviour
         public Text pontosText;
         public Text PontosHighscoreText;
         public Animator animatorComponent;
+        public int pulosExtras = 1;
 
 
         private void Start()
@@ -50,6 +51,10 @@ public class Jogador : MonoBehaviour
 
             jumpSFX.Play();
 
+            animatorComponent.SetBool("Pulando", true);
+         }
+        else if (Input.GetKeyUp(KeyCode.UpArrow)){
+            animatorComponent.SetBool("Pulando", false);
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -69,6 +74,15 @@ public class Jogador : MonoBehaviour
         if (estaNoChao)
         {
         rb.AddForce(Vector2.up * forcaPulo);
+        }
+
+        if (estaNoChao == false && pulosExtras > 0){
+            rb.AddForce(Vector2.up * forcaPulo);
+            pulosExtras--;
+        }
+
+        if (estaNoChao){
+            pulosExtras = 1;
         }
     }
 

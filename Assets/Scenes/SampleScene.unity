@@ -152,9 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b787e8c6682fbfe44919ec5478e87cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modificadorVelocidade: 0.3
+  modificadorVelocidade: 0.2
   velocidade: 4.5
-  velocidadeMaxima: 100
+  velocidadeMaxima: 75
 --- !u!4 &59771219
 Transform:
   m_ObjectHideFlags: 0
@@ -641,7 +641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527769961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.29, y: 5.71, z: 0}
+  m_LocalPosition: {x: 11.29, y: 5.71, z: 0.82}
   m_LocalScale: {x: 1, y: 0.4972, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1332,7 +1332,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 6
@@ -1354,7 +1354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1244658410}
-  forcaPulo: 850
+  forcaPulo: 775
   layerChao:
     serializedVersion: 2
     m_Bits: 256
@@ -1367,6 +1367,7 @@ MonoBehaviour:
   pontosText: {fileID: 1261118406}
   PontosHighscoreText: {fileID: 438471509}
   animatorComponent: {fileID: 1244658413}
+  pulosExtras: 1
 --- !u!95 &1244658413
 Animator:
   serializedVersion: 4
@@ -1841,11 +1842,11 @@ MonoBehaviour:
   birdPreFab: {fileID: 3350673536608434073, guid: f17f21325addd2144a8cbe65626e62d9, type: 3}
   birdYMinimo: 0.5
   birdYMaximo: 2
-  delayInicial: 1
+  delayInicial: 1.5
   delayEntreEnemies: 1.5
-  distanciaMinima: 3
-  distanciaMaxima: 15
-  birdSpawnPontuacaoMinima: 150
+  distanciaMinima: 4
+  distanciaMaxima: 12
+  birdSpawnPontuacaoMinima: 50
   jogadorScript: {fileID: 1244658412}
 --- !u!4 &1838199762
 Transform:

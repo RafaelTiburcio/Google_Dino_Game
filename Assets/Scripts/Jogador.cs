@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour
@@ -21,13 +20,15 @@ public class Jogador : MonoBehaviour
         public Text PontosHighscoreText;
         public Animator animatorComponent;
         public int pulosExtras = 1;
+        public GameObject restartButton;
+        public AudioSource backgroundMusic;
 
 
         private void Start()
         {
             highscore = PlayerPrefs.GetFloat("HIGHSCORE");
             // sistema de guardar uma informação, mesmo após o fechamento da aplicação.
-            PontosHighscoreText.text = "Recorde: " + Mathf.FloorToInt(highscore).ToString();
+            PontosHighscoreText.text = "HIGHSCORE: " + Mathf.FloorToInt(highscore).ToString();
         }
 
     // Update is called once per frame
@@ -36,7 +37,7 @@ public class Jogador : MonoBehaviour
         pontos += Time.deltaTime * multiplicadorPontos;
 
         var pontosArredondado = Mathf.FloorToInt(pontos);
-        pontosText.text = "Pontuação: " + pontosArredondado.ToString();
+        pontosText.text = "SCORE: " + pontosArredondado.ToString();
 
         if (pontosArredondado > 0 &&
             pontosArredondado % 100 == 0
@@ -119,8 +120,12 @@ public class Jogador : MonoBehaviour
 
             FimDeJogoSFX.Play();
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            //variavel de gameover
+            backgroundMusic.Stop();
+
+            restartButton.SetActive(true);
+
+            Time.timeScale = 0;
+
         }
     }
 }

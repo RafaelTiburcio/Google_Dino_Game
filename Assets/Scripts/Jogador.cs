@@ -14,7 +14,7 @@ public class Jogador : MonoBehaviour
         public AudioSource cemPontosSFX;
         public AudioSource FimDeJogoSFX;
         private bool estaNoChao;
-        private float pontos;
+        public float pontos;
         private float highscore;
         public float multiplicadorPontos = 1;
         public Text pontosText;

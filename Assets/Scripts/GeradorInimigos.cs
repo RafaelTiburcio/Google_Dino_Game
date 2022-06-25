@@ -11,6 +11,8 @@ public class GeradorInimigos : MonoBehaviour
     public float birdYMaximo = 1;
     public float delayInicial;
     public float delayEntreEnemies;
+    public float birdSpawnPontuacaoMinima = 300;
+    public Jogador jogadorScript;
 
     // Start is called before the first frame update
     private void Start()
@@ -22,7 +24,7 @@ public class GeradorInimigos : MonoBehaviour
     {
         var dado = Random.Range(1, 7);
 
-        if (dado <=2)
+        if (jogadorScript.pontos >= birdSpawnPontuacaoMinima && dado <=2)
         {
             //gerar bird
             var posicaoYAleatoria = Random.Range(birdYMinimo, birdYMaximo);

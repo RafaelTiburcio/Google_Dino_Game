@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Jogador : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class Jogador : MonoBehaviour
         public GameObject restartButton;
         public AudioSource backgroundMusic;
         public GameObject sairButton;
+
+
 
 
         private void Start()
@@ -47,7 +50,8 @@ public class Jogador : MonoBehaviour
             cemPontosSFX.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || CrossPlatformInputManager.GetButtonDown("Jump"))
+        //if (CrossPlatformInputManager.GetButtonDown("Jump")) -> somente android
         {
              Pular();
 
@@ -55,16 +59,27 @@ public class Jogador : MonoBehaviour
 
             animatorComponent.SetBool("Pulando", true);
          }
-        else if (Input.GetKeyUp(KeyCode.UpArrow)){
+
+        else if (Input.GetKeyUp(KeyCode.UpArrow) || CrossPlatformInputManager.GetButtonUp("Jump")){
             animatorComponent.SetBool("Pulando", false);
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Abaixar();
-
         }
+
+        else if (CrossPlatformInputManager.GetButtonDown("Down"))
+        {
+            Abaixar();
+        }
+
         else if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            Levantar();
+        }
+
+        else if (CrossPlatformInputManager.GetButtonUp("Down"))
         {
             Levantar();
         }

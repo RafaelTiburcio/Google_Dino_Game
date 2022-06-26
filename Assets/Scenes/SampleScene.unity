@@ -1173,6 +1173,7 @@ MonoBehaviour:
   - {fileID: 385719626667727689, guid: 84a9c813bbfe11946a935a8af8fdd476, type: 3}
   - {fileID: 7242663410825054125, guid: 5b1a84329c12cfd46b06bfe65a060784, type: 3}
   - {fileID: 3350673536608434073, guid: f17f21325addd2144a8cbe65626e62d9, type: 3}
+  - {fileID: 54058512767473980, guid: bcc3b6c927f579847ad391ea7d6eff7d, type: 3}
   delayInicial: 0
   delayEntreNuvens: 2.5
 --- !u!1 &966746386
@@ -1395,7 +1396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244658407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6455, y: 0.5483, z: 0}
+  m_LocalPosition: {x: 2.72, y: -0.76, z: 0}
   m_LocalScale: {x: 1.9428513, y: 2.676875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2061,8 +2062,10 @@ MonoBehaviour:
   - {fileID: 731546718031787899, guid: 1dc0ec88e5aa0714fa1031d179bb395a, type: 3}
   - {fileID: 6035691657616834474, guid: c7bbbbdf7006ff14da0135474c5c4955, type: 3}
   - {fileID: 5692001546606895067, guid: 035479115dd6f3246a8e6e55bb51b79e, type: 3}
+  - {fileID: 3440869345954834524, guid: d2dfffa543bb8224fb8e3fa0076bedb4, type: 3}
+  - {fileID: 5709910184101655306, guid: 7431c2a8c8828bc4e978528a6810d109, type: 3}
   birdPreFab: {fileID: 3350673536608434073, guid: f17f21325addd2144a8cbe65626e62d9, type: 3}
-  birdYMinimo: 1
+  birdYMinimo: 0.9
   birdYMaximo: 1.2
   delayInicial: 2.5
   delayEntreEnemies: 1.5

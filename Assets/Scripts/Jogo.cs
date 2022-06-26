@@ -29,4 +29,9 @@ public class Jogo : MonoBehaviour
 
         Time.timeScale = 1;
     }
+
+     public void Sair()
+    {
+        Application.Quit();
+    }
 }

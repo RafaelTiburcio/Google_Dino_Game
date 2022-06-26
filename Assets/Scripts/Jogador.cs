@@ -22,6 +22,7 @@ public class Jogador : MonoBehaviour
         public int pulosExtras = 1;
         public GameObject restartButton;
         public AudioSource backgroundMusic;
+        public GameObject sairButton;
 
 
         private void Start()
@@ -123,6 +124,8 @@ public class Jogador : MonoBehaviour
             backgroundMusic.Stop();
 
             restartButton.SetActive(true);
+
+            sairButton.SetActive(true);
 
             Time.timeScale = 0;
 

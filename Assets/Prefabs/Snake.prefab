@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea77674bbfacc7468e206733c830ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direcao: {x: -1.1, y: 0}
+  direcao: {x: -1.2, y: 0}
 --- !u!50 &-4332235887607793129
 Rigidbody2D:
   serializedVersion: 4

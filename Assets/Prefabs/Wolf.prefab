@@ -181,4 +181,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea77674bbfacc7468e206733c830ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direcao: {x: -1.3, y: 0}
+  direcao: {x: -1.2, y: 0}

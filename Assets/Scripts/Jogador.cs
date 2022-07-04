@@ -62,6 +62,7 @@ public class Jogador : MonoBehaviour
 
         else if (Input.GetKeyUp(KeyCode.UpArrow) || CrossPlatformInputManager.GetButtonUp("Jump")){
             animatorComponent.SetBool("Pulando", false);
+
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
